@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>보드</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	 <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+</head>
+<body>
+	<table class = "table"> <!-- 부트스트랩 적용 -->
+    	<thead class = "table-info"> <!-- 부트스트랩 적용 -->
+        	<tr>
+				<th>번호ㅇㅁㄴ</th> <!-- 테이블 항목 추가 -->
+            	<th>제목</th>
+            	<th>작성일시</th>
+        	</tr>
+    	</thead>
+	</table>
+    <h1 th:text="${message}">Hello, Thymeleaf!</h1>
+    <button id="myButton">sㄴㄴ</button>
+    <div id="result"></div>
+
+    <script>
+        $(document).ready(function() {
+            $("#myButton").click(function() {
+                $("#result").text("jQuery를 사용하여 메시지를 표시했습니다!");
+            });
+        });
+    </script>
+</body>
+</html>
